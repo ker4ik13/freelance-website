@@ -19,7 +19,7 @@ const PostFooter = (props) => {
         <footer className="post__footer">
             <Link className="post__footer__item" to={`/freelance-website/blog/${(postLink)-1}`}>
                 <ArrowButton
-                image = '../../assets/img/arrow.svg'
+                image = '../assets/img/arrow.svg'
                 className='footer__back-button'/>
                 <p className="post__footer__text">Предыдующая запись</p>
             </Link>
@@ -27,7 +27,7 @@ const PostFooter = (props) => {
             <Link className="post__footer__item" to={`/freelance-website/blog/${+(postLink)+1}`}>
                 <p className="post__footer__text">Следующая запись</p>
                 <ArrowButton
-                image = '../../assets/img/arrow.svg'
+                image = '../assets/img/arrow.svg'
                 className='footer__prev-button'/>
             </Link>
 

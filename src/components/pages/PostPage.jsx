@@ -26,7 +26,7 @@ const PostPage = (props) => {
 
                 <PostHeader
                 post = {post}
-                headerBg = '../../assets/img/posts/bitcoin-post.jpg'/>
+                headerBg = '../assets/img/posts/bitcoin-post.jpg'/>
 
                 <PostContent
                 post = {post}/>

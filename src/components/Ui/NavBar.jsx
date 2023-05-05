@@ -13,9 +13,9 @@ const Nav = (props) => {
     const changeTheme = (event) => {
          document.body.classList.toggle('dark-theme');
          if(document.body.classList.contains('dark-theme')){
-             event.target.src='../assets/img/nav/sun.svg';
-         } else if(event.target.src = '../assets/img/nav/sun.svg'){
-            event.target.src='../assets/img/nav/moon.svg';
+             event.target.src='./assets/img/nav/sun.svg';
+         } else if(event.target.src = './assets/img/nav/sun.svg'){
+            event.target.src='./assets/img/nav/moon.svg';
          }
     }
 
@@ -28,7 +28,7 @@ const Nav = (props) => {
             <li><NavLink className='nav__link' to="./freelance-website/works">Работы</NavLink></li>
             <li><NavLink className='nav__link' to="./freelance-website/contacts">Контакты</NavLink></li>
         </ul>
-        <ToggleTheme image = '../assets/img/nav/moon.svg' function={changeTheme}/>
+        <ToggleTheme image = './assets/img/nav/moon.svg' function={changeTheme}/>
     </nav>
     )
 }

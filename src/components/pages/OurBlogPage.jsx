@@ -18,7 +18,7 @@ const Blog = (props) => {
         <main className="main">
             <Header
                 title = 'Добро пожаловать в наш Блог'
-                headerBg = './assets/img/headers/header-blog.jpg'
+                headerBg = '../assets/img/headers/header-blog.jpg'
             />
             <div className="main__title">
                 <h1 className="main__name">Недавние посты</h1>

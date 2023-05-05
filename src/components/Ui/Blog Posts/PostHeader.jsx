@@ -9,15 +9,15 @@ const PostHeader = (props) => {
         <header className="header__post">
             <div className="header__nav">
                 <div className="header__wrapper">
-                    <Link to='../blog'><ArrowButton
-                     image = '../assets/img/arrow.svg'
+                    <Link to='/freelance-website/blog'><ArrowButton
+                     image = '../../assets/img/arrow.svg'
                      className="header__back-button"/></Link>
                     {/* Исправить пропсы */}
                     <h1 className="header__post__title">{props.post.postTitle}</h1>
                 </div>
                 <div className="header__wrapper">
                 
-                    <img src='../assets/img/clock.svg'
+                    <img src='../../assets/img/clock.svg'
                     className="header__date-img"/>
                     <time className="header__date" dateTime={props.post.postDateTime}>{props.post.postDate}</time>
                 </div>

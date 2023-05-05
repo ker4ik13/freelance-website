@@ -7,7 +7,7 @@ const Works = (props) => {
             <main className="main">
                 <Header
                     title = 'Здесь представлены все наши работы'
-                    headerBg = './assets/img/headers/header-works.jpg'
+                    headerBg = '../assets/img/headers/header-works.jpg'
                 />
                 <div className="main__title">
                     <h1 className="main__name">Работы</h1>

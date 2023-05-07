@@ -1,6 +1,6 @@
 import React, { useEffect, useState, } from "react";
 import { useParams, Link } from "react-router-dom";
-import blogPosts from '../data/posts.json'
+import worksPosts from '../data/works.json'
 import PostHeader from "../Ui/Posts/PostHeader";
 import ArrowIcon from "../icons/arrow.svg"
 import PostContent from "../Ui/Posts/PostContent";
@@ -14,7 +14,7 @@ const PostPage = (props) => {
     const [post, setPost] = useState([])
 
     useEffect(() => {
-        setPost(blogPosts[postLink], [postLink])
+        setPost(worksPosts[postLink], [postLink])
     })
 
 
@@ -27,7 +27,7 @@ const PostPage = (props) => {
                 <PostHeader
                 post = {post}
                 headerBg = {post.postImage}
-                page='blog'/>
+                page='works'/>
 
                 <PostContent
                 post = {post}/>
@@ -35,7 +35,7 @@ const PostPage = (props) => {
                 <PostFooter
                 postLink = {postLink}
                 post = {post}
-                page='blog'/>
+                page='works'/>
 
             </div>   
             }

@@ -9,9 +9,15 @@ const PostHeader = (props) => {
         <header className="header__post">
             <div className="header__nav">
                 <div className="header__wrapper">
-                    <Link to='/freelance-website/blog'><ArrowButton
-                     image = '../assets/img/arrow.svg'
-                     className="header__back-button"/></Link>
+                    {props.page === 'blog' &&
+                        <Link to='/freelance-website/blog'><ArrowButton
+                        image = '../assets/img/arrow.svg'
+                        className="header__back-button"/></Link>
+                    }{props.page === 'works' &&
+                        <Link to='/freelance-website/works'><ArrowButton
+                        image = '../assets/img/arrow.svg'
+                        className="header__back-button"/></Link>
+                    }
                     {/* Исправить пропсы */}
                     <h1 className="header__post__title">{props.post.postTitle}</h1>
                 </div>

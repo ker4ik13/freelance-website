@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 
-const PostItem = (props) => {
+const WorkCard = (props) => {
 
     const [post = props.post, setPost] = useState([]);
 
@@ -11,15 +11,14 @@ const PostItem = (props) => {
 
 
     return(
-        <Link to={`./${post.postId}`} className="post" id={post.postId}>
-            <img src={props.post.postImage} className="post__img"/>
-            <div className="post__preview">
+        <Link to={`./${post.postId}`} className="blog__post" id={post.postId}>
+            <img src={props.post.postImage} className="blog__post__img"/>
+            <div className="blog__post__preview">
                 <h2 className="post__title">{props.post.postTitle}</h2>
                 <p className="post__description">{props.post.postDescription}</p>
-                <time className="post__date" dateTime={props.post.postDateTime}>{props.post.postDate}</time>
             </div>
         </Link>
     )
 }
 
-export default PostItem;
+export default WorkCard;

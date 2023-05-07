@@ -2,13 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ToggleTheme from "./Buttons/ToggleTheme";
 
-// Icons
-// import moonImage from '../icons/moon.svg';
-// import sunImage from '../icons/sun.svg';
-// import yellowSun from '../icons/yellow-sun.svg'
-
-
 const Nav = (props) => {
+
 
     const changeTheme = (event) => {
          document.body.classList.toggle('dark-theme');
@@ -18,17 +13,35 @@ const Nav = (props) => {
             event.target.src='./assets/img/nav/moon.svg';
          }
     }
+    
+    const burgerMenu = (event) => {
+        const navBurger = document.querySelector('.nav__burger');
+        const nav = document.querySelector('.nav');
+        navBurger.classList.toggle('active');
+        nav.classList.toggle('burger');
+        document.querySelectorAll('.nav__link').forEach(item => {
+            item.addEventListener('click', (event) => {
+                navBurger.classList.remove('active');
+                nav.classList.remove('burger')
+            })
+        })
+    }
 
     return(
         <nav className="nav">
-        <NavLink to="./freelance-website/main" className='logo'>Logo</NavLink>
+        <NavLink to="./" className='logo'>Logo</NavLink>
         <ul className="nav__links">
-            <li><NavLink className='nav__link' to="./freelance-website/main">Главная</NavLink></li>
+            <li><NavLink className='nav__link' to="./freelance-website/">Главная</NavLink></li>
             <li><NavLink className='nav__link' to="./freelance-website/blog">Наш блог</NavLink></li>
             <li><NavLink className='nav__link' to="./freelance-website/works">Работы</NavLink></li>
             <li><NavLink className='nav__link' to="./freelance-website/contacts">Контакты</NavLink></li>
         </ul>
         <ToggleTheme image = './assets/img/nav/moon.svg' function={changeTheme}/>
+        <div className="nav__burger" onClick={burgerMenu}>
+            <span className="nav__toggle__burger"></span>
+            <span className="nav__toggle__burger"></span>
+            <span className="nav__toggle__burger"></span>
+        </div>
     </nav>
     )
 }

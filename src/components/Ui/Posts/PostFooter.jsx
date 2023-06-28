@@ -18,7 +18,7 @@ const PostFooter = (props) => {
           <div className="post__footer__wrapper">
             <Link
               className="post__footer__item"
-              to={`/freelance-website/blog/${postLink + 1}`}>
+              to={`/blog/${+postLink + 1}`}>
               <ArrowButton
                 image="../assets/img/arrow.svg"
                 className="footer__back-button"/>
@@ -27,7 +27,7 @@ const PostFooter = (props) => {
 
             <Link
               className="post__footer__item"
-              to={`/freelance-website/blog/${+postLink - 1}`}>
+              to={`/blog/${+postLink - 1}`}>
               <p className="post__footer__text">Следующая запись</p>
               <ArrowButton
                 image="../assets/img/arrow.svg"
@@ -38,7 +38,7 @@ const PostFooter = (props) => {
             <div className="post__footer__wrapper">
               <Link
                 className="post__footer__item"
-                to={`/freelance-website/works/${postLink + 1}`}>
+                to={`/works/${+postLink + 1}`}>
                 <ArrowButton
                   image="../assets/img/arrow.svg"
                   className="footer__back-button"/>
@@ -47,7 +47,7 @@ const PostFooter = (props) => {
   
               <Link
                 className="post__footer__item"
-                to={`/freelance-website/works/${+postLink - 1}`}>
+                to={`/works/${+postLink - 1}`}>
                 <p className="post__footer__text">Следующая запись</p>
                 <ArrowButton
                   image="../assets/img/arrow.svg"

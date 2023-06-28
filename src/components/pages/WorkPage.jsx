@@ -26,7 +26,7 @@ const PostPage = (props) => {
 
                 <PostHeader
                 post = {post}
-                headerBg = {post.postImage}
+                headerBg = {`../${post.postImage}`}
                 page='works'/>
 
                 <PostContent

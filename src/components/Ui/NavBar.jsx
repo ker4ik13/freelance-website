@@ -31,10 +31,10 @@ const Nav = (props) => {
         <nav className="nav">
         <NavLink to="./" className='logo'>Logo</NavLink>
         <ul className="nav__links">
-            <li><NavLink className='nav__link' to="./freelance-website/">Главная</NavLink></li>
-            <li><NavLink className='nav__link' to="./freelance-website/blog">Наш блог</NavLink></li>
-            <li><NavLink className='nav__link' to="./freelance-website/works">Работы</NavLink></li>
-            <li><NavLink className='nav__link' to="./freelance-website/contacts">Контакты</NavLink></li>
+            <li><NavLink className='nav__link' to="/">Главная</NavLink></li>
+            <li><NavLink className='nav__link' to="/blog">Наш блог</NavLink></li>
+            <li><NavLink className='nav__link' to="/works">Работы</NavLink></li>
+            <li><NavLink className='nav__link' to="/contacts">Контакты</NavLink></li>
         </ul>
         <ToggleTheme image = './assets/img/nav/moon.svg' function={changeTheme}/>
         <div className="nav__burger" onClick={burgerMenu}>

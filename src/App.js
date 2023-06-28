@@ -18,7 +18,7 @@ function App() {
   
         {/* Для GitHub */}
         
-        {/* <Route path="/freelance-website/" element={<MainPage/>}/>
+        <Route path="/freelance-website/" element={<MainPage/>}/>
         <Route path="/freelance-website/blog" element={<OurBlogPage/>}/>
         <Route path="/freelance-website/works" element={<WorksPage/>}/>
         <Route path="/freelance-website/contacts" element={<ContactsPage/>}/>
@@ -26,11 +26,11 @@ function App() {
         <Route path='/freelance-website/blog/:postLink' element={<PostPage/>}/>
         <Route path='/freelance-website/works/:postLink' element={<WorkPage/>}/>
 
-        <Route path="/freelance-website/index.html" element={<Navigate to="/freelance-website/" />} /> */}
+        <Route path="/freelance-website/index.html" element={<Navigate to="/freelance-website/" />} />
 
         {/* для разработки */}
 
-        <Route path="/" element={<MainPage/>}/>
+        {/* <Route path="/" element={<MainPage/>}/>
         <Route path="/blog" element={<OurBlogPage/>}/>
         <Route path="/works" element={<WorksPage/>}/>
         <Route path="/contacts" element={<ContactsPage/>}/>
@@ -38,7 +38,7 @@ function App() {
         <Route path='/blog/:postLink' element={<PostPage/>}/>
         <Route path='/works/:postLink' element={<WorkPage/>}/>
 
-        <Route path="/index.html" element={<Navigate to="/" />} />
+        <Route path="/index.html" element={<Navigate to="/" />} /> */}
 
       </Routes>
     </BrowserRouter>

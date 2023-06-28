@@ -12,7 +12,7 @@ const Blog = (props) => {
      const [postsView, setPostsView] = useState(3);
 
      useEffect(() => {
-        setPosts(blogPosts)
+      setPosts(blogPosts)
      })
 
      const setCountPostsView = (event) => {
